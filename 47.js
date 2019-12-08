@@ -43,7 +43,6 @@ sonIguales("Hola", "Hola");
 sonIguales('Rojo', 'Verde');
 
 //EJERCICIO 3
-
 const agregarNumero = (array, num) => {
     array.push(num)    
     console.log(array)
@@ -52,7 +51,6 @@ let algoParaDecir = ['Hola', '¿qué numero', 'es?'];
 agregarNumero(algoParaDecir, 5);
 
 //EJERCICIO 4
-
 const comprobarPosicion = (array, string) => {
     let datoEncontrado = false;
     for (let i = 0; i < array.length; i++) {
@@ -79,3 +77,19 @@ const calcularPromedio = (array) => {
 }
 calcularPromedio([5, 8, 6, 7, 3, 5, 6]);
 
+
+////////////////////////////// EJERCICIOS CON RETURN - Clase 48 //////////////////////////////
+
+// EJERCICIO 1
+const obtenerNombre = (miNombre) => {
+    return 'Mariana'
+}
+console.log(`Mi nombre es ${obtenerNombre()}`);
+
+
+//EJERCICIO 2
+const obtenerSaludo = (saludo) => {
+    let nombreGuardado = obtenerNombre()
+    return `¡Hola, ${nombreGuardado}!` 
+}
+console.log(obtenerSaludo());
