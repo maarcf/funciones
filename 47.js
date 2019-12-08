@@ -74,7 +74,7 @@ const calcularPromedio = (array) => {
         console.log(variableAcumuladora)
             
     }
-    promedio = variableAcumuladora / array.length - 1
+    promedio = variableAcumuladora / array.length
     console.log(promedio) 
 }
 calcularPromedio([5, 8, 6, 7, 3, 5, 6]);
