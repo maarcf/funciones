@@ -86,6 +86,9 @@ const obtenerNombre = (miNombre) => {
 }
 console.log(`Mi nombre es ${obtenerNombre()}`);
 
+const obtenerApellido = miApellido => 'Cairo';
+console.log(`Mi appellido es ${obtenerApellido()}`);
+
 
 //EJERCICIO 2
 const obtenerSaludo = (saludo) => {
@@ -93,3 +96,38 @@ const obtenerSaludo = (saludo) => {
     return `¡Hola, ${nombreGuardado}!` 
 }
 console.log(obtenerSaludo());
+
+
+// EJERCICIO 3
+const obtenerResto = (a, b) => a % b;
+console.log(obtenerResto(10, 2));
+
+
+// EJERCICIO 4
+const esPar = num => {
+    if (obtenerResto(num, 2) === 0) /*esto da de resultado un booleano*/ {
+        return true
+    } else {
+        return false
+    }
+}
+//más simple:
+esPar = num => obtenerResto(num, 2) === 0;
+
+console.log(esPar(10));
+console.log(esPar(15));
+
+
+// EJERCICIO 5
+const listaDeNumeros = [ 43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32 ];
+
+const encontrarImpares = array => {
+    let numerosImpares = [];
+    for (let i = 0; i < array.length; i++) {
+        if (!esPar(array[i])) {
+            numerosImpares.push(array[i])
+        }
+    }
+    return numerosImpares
+};
+console.log(encontrarImpares(listaDeNumeros));
